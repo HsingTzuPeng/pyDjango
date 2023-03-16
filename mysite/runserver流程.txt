@@ -10,4 +10,6 @@ ModuleNotFoundError: No module named 'mysite'
 
 https://docs.djangoproject.com/
 
+在 models.py 做了更動，要告訴 Django 我們修改了一些內容，所以在cmd虛擬環境內輸入 :
+(xxxx_enve) 位址>python manage.py makemigrations app名稱
 
