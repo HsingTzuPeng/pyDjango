@@ -9,3 +9,5 @@ ModuleNotFoundError: No module named 'mysite'
 處理:輸入 python manage.py migrate
 
 https://docs.djangoproject.com/
+
+
