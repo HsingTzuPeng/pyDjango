@@ -17,7 +17,5 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('homepage/', include('homepage.urls')),
-    path('vendor/', include('vendor.urls')),
-    path('admin/', admin.site.urls),
+    path('', views.vendor_index, name="vendor_index"),
 ]
