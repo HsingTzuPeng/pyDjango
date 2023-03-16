@@ -8,7 +8,7 @@ mysite/
         wsgi.py
 
     polls/  #app功能名稱
-        migrations/
+        migrations/  #資料庫的版本控制
             __init__.py
             0001_initial.py
         __init__.py
@@ -25,11 +25,11 @@ mysite/
             css/
                 style.css
                
-        templates/
+        templates/  #html模板
             detail.html
             index.html
             results.html
 
-    templates/
+    templates/  #管理介面模板
         admin/
             base_site.html
