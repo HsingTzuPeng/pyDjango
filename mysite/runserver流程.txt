@@ -13,3 +13,9 @@ https://docs.djangoproject.com/
 在 models.py 做了更動，要告訴 Django 我們修改了一些內容，所以在cmd虛擬環境內輸入 :
 (xxxx_enve) 位址>python manage.py makemigrations app名稱
 
+建立資料庫管理員 - Admin
+python manage.py createsuper
+輸入名稱、信箱、密碼
+出現訊息 => Superuser created successfully.
+python manage.py runserver
+https://docs.djangoproject.com/admin/
