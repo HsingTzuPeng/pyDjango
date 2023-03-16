@@ -3,8 +3,7 @@ from .models import Vendor
 
 # Create your views here.
 
-
 def showtemplate(request):
     vendor_list = Vendor.objects.all()
     context = {'vendor_list': vendor_list}
-    return render(request, 'test.html', context)
+    return render(request, 'vendor.html', context)
