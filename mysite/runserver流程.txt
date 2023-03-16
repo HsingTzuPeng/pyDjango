@@ -1,0 +1,11 @@
+到 cmd 操作
+進入虛擬環境的文件夾，啟用activate檔案
+輸入 cd mysite
+輸入 python manage.py migrate
+輸入 python manage.py runserver
+p.s 到 Terminal 操作不用進入虛擬環境
+
+ModuleNotFoundError: No module named 'mysite'
+處理:輸入 python manage.py migrate
+
+https://docs.djangoproject.com/
