@@ -15,7 +15,7 @@ https://docs.djangoproject.com/
 
 建立資料庫管理員 - Admin
 python manage.py createsuper
-輸入名稱、信箱、密碼
+輸入名稱(user)、信箱(user@example.com)、密碼(0000)
 出現訊息 => Superuser created successfully.
 python manage.py runserver
 https://docs.djangoproject.com/admin/
