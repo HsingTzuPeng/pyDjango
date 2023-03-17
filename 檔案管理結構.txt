@@ -7,7 +7,7 @@ mysite/
         asgi.py
         wsgi.py
 
-    polls/  #app功能名稱
+    vendor/  #app功能名稱
         migrations/  #資料庫的版本控制
             __init__.py
             0001_initial.py
