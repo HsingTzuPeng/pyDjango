@@ -9,7 +9,7 @@ def showtemplate(request):
     vendor_list = Vendor.objects.all()
     context = {'vendor_list': vendor_list}
     # print(vendor_list)
-    return render(request, 'vendor/vendor_detail.html', context)
+    return render(request, 'vendors/vendor_detail.html', context)
 
 # 針對 vendor_create.html
 def vendor_create_view(request):
@@ -21,7 +21,7 @@ def vendor_create_view(request):
     context = {
         'form' : form
     }
-    return render(request, "vendor/vendor_create.html", context)
+    return render(request, "vendors/vendor_create.html", context)
 
 def vendor_create_view(request):
     form = RawVendorForm(request.POST or None)
@@ -32,3 +32,10 @@ def vendor_create_view(request):
         'form' : form
     }
     return render(request, "vendors/vendor_create.html", context)
+
+def singleVendor(request, id):
+    vendor_list = Vendor.objects.get(id=id)
+    context = {
+        'vendor_list': vendor_list
+    }
+    return render(request, 'vendors/vendor_detail.html', context)
