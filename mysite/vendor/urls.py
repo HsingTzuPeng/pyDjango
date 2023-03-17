@@ -19,5 +19,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('', views.showtemplate),
+    path('<int:id>/', views.singleVendor, name='vendor'),
+    path('creat', views.vendor_create_view),
+    path('fcreat', views.food_create_view),
     path('', views.vendor_index, name="vendor_index"),
 ]
