@@ -6,4 +6,5 @@ from .models import Vendor
 def showtemplate(request):
     vendor_list = Vendor.objects.all()
     context = {'vendor_list': vendor_list}
-    return render(request, 'vendor.html', context)
+    # print(vendor_list)
+    return render(request, 'vendor/vendor_detail.html', context)
